@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- balise meta  -->
 		<title > Cours initiation HTML et CSS  </title>
@@ -54,7 +54,12 @@
     		text-align: center;
 			}
 
-			#catimg {
+			#catimg0 {
+			height: 25%;
+   			width: 15%;
+			}
+
+			#catimg1 {
 			height: 25%;
    			width: 15%;
 			}
@@ -64,9 +69,9 @@
 			position:fixed;
     		background: #F0F0F0;
     		border: 0px solid #CCC;
-   			height: 30%;
+   			height: 50%;
    			width: 20%;
-   			margin-top : 0%;
+   			margin-top : 0;
    			right: 0; 
    			}
 
@@ -85,7 +90,7 @@
 	<body>
 		<header id="header">
 			
-			<img id="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
+			<img id="catimg0" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
 			<h1>Initiation au language HTML et CSS</h1>
 			
 		</header>
@@ -100,6 +105,9 @@
 				<li><a href="#definition">Les balises de définitions </a></li>
 				<li><a href="#code">Les balises de code et unification</a></li>
 				<li><a href="#tableau">Les tableaux</a></li>
+				<li><a href="#section/articles">Les sections et articles</a></li><li><a href="#tableau">Les tableaux</a></li>
+				<li><a href="#nav">Les navigateur</a></li><li><a href="#tableau">Les tableaux</a></li>
+				<li><a href="#lien">Les liens</a></li>
 				<li><a href="#CSS">Aspect de mise en forme et CSS</a></li>
 			</ul>
 		</nav>
@@ -200,14 +208,18 @@
 				</ul>
 				<table>
 					<thead>
-						<th> case 1 thead </th>
-						<th> case 2 thead</th>
-						<th></th>
+						<tr>
+							<th> case 1 thead </th>
+							<th> case 2 thead</th>
+							<th></th>
+						</tr>
 					</thead>
-					<tfoot >
-						<th> case1 tfoot </th>
-						<th> case2 tfoot </th>
-						<th></th>
+					<tfoot>
+						<tr>
+							<th> case1 tfoot </th>
+							<th> case2 tfoot </th>
+							<th></th>
+						</tr>
 					</tfoot>
 					<tr>
 						<td>case 1 inter</td>
@@ -220,14 +232,18 @@
 				<pre>
 					&lt;table&gt;
 					&lt;thead&gt;
-						&lt;th&gt; case 1 thead &lt;/th&gt;
-						&lt;th&gt; case 2 thead &lt;/th&gt;
-						&lt;th&gt;&lt;/th&gt;
+						&lt;tr&gt;
+							&lt;th&gt; case 1 thead &lt;/th&gt;
+							&lt;th&gt; case 2 thead &lt;/th&gt;
+							&lt;th&gt;&lt;/th&gt;
+						&lt;/tr&gt;
 					&lt;/thead&gt;
 					&lt;tfoot &gt;
-						&lt;th&gt; case1 tfoot &lt;/th&gt;
-						&lt;th&gt; case2 tfoot &lt;/th&gt;
-						&lt;th&gt;&lt;/th&gt;
+						&lt;tr&gt;
+							&lt;th&gt; case1 tfoot &lt;/th&gt;
+							&lt;th&gt; case2 tfoot &lt;/th&gt;
+							&lt;th&gt;&lt;/th&gt;
+						&lt;/tr&gt;
 					&lt;/tfoot&gt;
 						&lt;tr&gt;
 							&lt;td&gt;case 1 inter&lt;/td&gt;
@@ -240,6 +256,57 @@
 
 			</section>
 
+			<section id="section/articles">
+  			<h3>Les sections et articles</h3>
+		
+			
+			<p>L'élément HTML &lt;section&gt; représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.</p>
+			<p>L'élément HTML &lt;article&gt; représente du contenu autonome dans un document, une page, une application, ou un site. Ceci peut être un message sur un forum, un article de journal ou de magazine, une parution sur un blog, un commentaire d'utilisateur, un widget ou gadget interactif, ou tout autre élément de contenu indépendant. Ce contenu est prévu pour être distribué ou réutilisé indépendamment</p>
+
+			</section>
+
+			<section id="lien">
+  			<h3>Les liens</h3>
+	
+			<p>Les liens permettent de rediriger vers un DOM existant en utilisant la balise &lt;a&gt; &lt;/a&gt; et contient différent attributs</p>
+			<ul>
+				<li> L'attibut <strong>href="url"</strong> qui est nécessaire et permet de définir l'url de redirection du lien</li>
+				<li> L'attribut <strong>target="url"</strong> pour lequel il existe plusieur valeurs :</li>
+				<ul>
+					<li>_self : charge la réponse dans le contexte de navigation courant. Il s'agit de la valeur par défaut quand l'attribut n'est pas renseigné.</li>
+					<li>_blank : charge la réponse dans un nouveau contexte de navigation.</li>
+				</ul>
+				</ul>
+			<p>Les liens peuvent aussi rediriger vers un élément interne de la page en donnant un identifiant <strong>id="identifiant"</strong> et définissant l'url de redirection de la manière suivante : <strong>href="#identifiant"</strong>.</p>
+			</ul>
+			</section>
+
+
+
+			<section id="nav">
+  			<h3>Les navigateurs</h3>
+		
+			
+			<p>ce sont des menus contextuels qui permettent de réaliser la navigation au sein du site ou au sein du DOM par le biais de liens listés. Ils sont balisés par &lt;nav&gt; &lt;/nav&gt;. Sur cette page, il existe un nvaigateur qui liste des liens permettant de naviguer sur les différentes sections du corps du DOM. Ce navigateur a été codé comme suit :</p>
+			<pre>
+			&lt;nav id="navigator"&gt;
+			&lt;h4&gt;Dans cette page:&lt;/h4&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="#structure"&gt;Structure d'une page web.&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#encodage"&gt;importation d'encodage.&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#sémantique"&gt;Les balises sémantiques &lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#liste"&gt;Les balises de liste &lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#definition"&gt;Les balises de définitions &lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#code"&gt;Les balises de code et unification&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#tableau"&gt;Les tableaux&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#section/articles"&gt;Les sections et articles&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#tableau"&gt;Les tableaux&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#nav"&gt;Les navigateur&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#tableau"&gt;Les tableaux&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#lien"&gt;Les liens&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#CSS"&gt;Aspect de mise en forme et CSS&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/nav&gt;
+			</pre>
+			</section>
 
 			<section id="CSS">
   			<h3>Aspect de mise en forme et CSS</h3>
@@ -254,7 +321,7 @@
 	<footer id="footer">
 			
 			<h3>page réalisée par Quentin</h3>
-			<img id="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">	
+			<img id="catimg1" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">	
 
 		</footer>
 	</body>
