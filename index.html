@@ -4,85 +4,259 @@
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- balise meta  -->
 		<title > Cours initiation HTML et CSS  </title>
+
+		<style type="text/css">
+
+			body{
+    		margin-top: 0px;
+    		background:#ffff;
+			}
+
+			table {
+			border-collapse:collapse;
+ 			border-width:1px; 
+ 			border-style:solid; 
+ 			border-color:black;
+ 			width:400px;
+ 			height: 75px;
+ 			}
+
+			td { 
+			text-align:center;
+ 			border-width:1px;
+			border-style:solid; 
+ 			border-color:black;
+			width:400px;
+			height: 75px;
+			}
+
+			th { 
+ 			border-width:1px;
+			border-style:solid; 
+ 			border-color:black;
+			width:200px;
+			height: 75px;
+			}
+
+			header {
+			padding: 0;
+   			height:10%;
+    		background:#F0F0F0;
+    		border:0px solid #CCC;
+    		text-align: center;
+			}
+
+			footer {
+			padding: 0;
+   			height:10%;
+    		background:#F0F0F0;
+    		border:0px solid #CCC;
+    		text-align: center;
+			}
+
+			#catimg {
+			height: 25%;
+   			width: 15%;
+			}
+
+			#navigator {
+			list-style: none;
+			position:fixed;
+    		background: #F0F0F0;
+    		border: 0px solid #CCC;
+   			height: 30%;
+   			width: 20%;
+   			margin-top : 0%;
+   			right: 0; 
+   			}
+
+   			#content {
+    		background: #FFFFFF;
+   			height: 90%;
+   			width: 80%;
+   			margin-top : 75px;
+			}
+
+ 
+		</style>
 		
 	</head>
+	
 	<body>
-	<h1>Initiation au language HTML et CSS</h1>
-	<p> définition : Une page web est codé avec le langage HTML qui structure les éléments mais aussi est codé grâce au CSS qui permet de réaliser la mise en page.
-		Le HTML est un langage balisé, chaque élément est défini par une balise ouvrante &lt; balise &gt; ainsi qu'une balise fermante &lt; /balise &gt; 
-		Les balises peuvent être imbriquées les unes dans les autres tant que la structure de base est respectée</p>
-		<p></p>
-		<p></p>
-	<ol>
-		<li>Structure d'une page web.</li>
-		<p></p>
+		<header id="header">
+			
+			<img id="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
+			<h1>Initiation au language HTML et CSS</h1>
+			
+		</header>
 
-		<p></p>
-		<p>La structure de base d'une page web est constitué de plusieurs éléments balisés essentiels à l'interpretation du code source et doit contenir</p>
+		<nav id="navigator">
+			<h4>Dans cette page:</h4>
 			<ul>
-				<li>La description STRICTEMENT nécessaire du type du document définie par : &lt; DOCTYPE html &gt; </li>
-				<li>une balise <strong>&lt; html &gt;  ....&lt; /html &gt;</strong> qui est la balise définissant les limite du code HTML et se doit de contenir la balise suivant dans la liste </li>
-				<li>une balise <strong>&lt; head &gt; .... &lt; /html &gt; </strong>qui permet de défninir le nom de référence de la page web et peut contenir d'autre informations de type "meta" qui vont agir sur le document</li>
-				<li>la balise <strong>&lt; head &gt</strong> contient de ce fait la balise title qui définie le nom de référence de la page. ici le nom de la page est <strong>&lt;title&gt; Cours initiation HTML et CSS  &lt;/title&gt;</strong> Attention une page web a un seul et unique "title"</li>
-				<li>Pour finir une page html doit contenir une balise <strong>&lt; body &gt; .... &lt; /body &gt; </strong> qui définir le corps/contenu de la page web</li>
+				<li><a href="#structure">Structure d'une page web.</a></li>
+				<li><a href="#encodage">importation d'encodage.</a></li>
+				<li><a href="#sémantique">Les balises sémantiques </a></li>
+				<li><a href="#liste">Les balises de liste </a></li>
+				<li><a href="#definition">Les balises de définitions </a></li>
+				<li><a href="#code">Les balises de code et unification</a></li>
+				<li><a href="#tableau">Les tableaux</a></li>
+				<li><a href="#CSS">Aspect de mise en forme et CSS</a></li>
 			</ul>
-		<p></p>
-		<p></p>
-		<li>importation d'encodage.</li>
-		<p></p>
-			<ul>
-				<li>Les caratère spéciaux comme es lettre accentué nécéssite "l'importation d'un type unicode. Cette action se réalise dans la partie <strong>&lt; head &gt; .... &lt; /html &gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;</strong></li>
+		</nav>
+		
+		
+		<div id="content">
+			<p> <Strong> <u> Définition :</u> </Strong> Une page web est codé avec le langage HTML qui structure les éléments mais aussi est codé grâce au CSS qui permet de réaliser la mise en page.
+			Le HTML est un langage balisé, chaque élément est défini par une balise ouvrante &lt; balise &gt; ainsi qu'une balise fermante &lt; /balise &gt; 
+			Les balises peuvent être imbriquées les unes dans les autres tant que la structure de base est respectée</p>
+
+
+			<section id="structure">
+  				<h3>Structure d'une page web.</h3>
+				<p>La structure de base d'une page web est constitué de plusieurs éléments balisés essentiels à l'interpretation du code source et doit contenir</p>
+				<ul>
+					<li>La description STRICTEMENT nécessaire du type du document définie par : &lt; !DOCTYPE html &gt; </li>
+					<li>une balise <strong>&lt; html &gt;  ....&lt; /html &gt;</strong> qui est la balise définissant les limite du code HTML et se doit de contenir la balise suivant dans la liste </li>
+					<li>une balise <strong>&lt; head &gt; .... &lt; /head &gt; </strong>qui permet de défninir le nom de référence de la page web et peut contenir d'autre informations de type "meta" qui vont agir sur le document</li>
+					<li>la balise <strong>&lt; head &gt;</strong> contient de ce fait la balise title qui définie le nom de référence de la page. ici le nom de la page est <strong>&lt;title&gt; Cours initiation HTML et CSS  &lt;/title&gt;</strong> Attention une page web a un seul et unique "title"</li>
+					<li>Pour finir une page html doit contenir une balise <strong>&lt; body &gt; .... &lt; /body &gt; </strong> qui définir le corps/contenu de la page web</li>
+				</ul>
+				<p>Exemple de structure de base:</p>
+					<pre>
+				&lt; !DOCTYPE html &gt;
+				&lt; html &gt; 
+					&lt; head &gt; 
+						&lt;title&gt; Cours initiation HTML et CSS  &lt;/title&gt;
+					&lt; /head &gt;
+					&lt; body &gt;
+						Contenu
+					&lt; /body &gt;
+				&lt; /html &gt;
+					</pre>
+				
+			</section>
+
+
+			<section id="encodage">
+  				<h3>Importation d'encodage.</h3>
+				<ul>
+					<li>Les caratère spéciaux comme es lettre accentué nécéssite "l'importation d'un type unicode. Cette action se réalise dans la partie <strong>&lt; head &gt; .... &lt; /html &gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;</strong></li>
 			
-			
-			</ul>
-		<p></p>
-		<p></p>
-		<li>Les balises du <strong>&lt; body &gt; .... &lt; /body &gt; </strong></li>
-		<p></p>
-			<ul>
-				<li><strong>&lt; h1 &gt; ... &lt; h1 &gt;</strong> qui définit les "headers" h1, h2, h3, h4, h5, h6. Le header h1 a la police la plus grande police parmis es header. Par convention il n'en faut pas plus de 6 par pages</li> 
-				<li><strong>&lt; p &gt; ... &lt; /p &gt;</strong>  qui définit un bloc text avec un saut de ligne à la fin du bloc.</li>
-				<li><strong>&lt; em &gt; ... &lt; /em &gt;</strong> qui rend italique le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
-				<li><strong>&lt; strong &gt; ... &lt; /strong &gt;</strong> qui rend gras le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
-				<li><strong>&lt; mark &gt; ... &lt; /mark &gt;</strong>qui rend surligne le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
-				<li><strong>&lt;  &gt; ... &lt;  &gt;</strong></li>
-			
-			</ul>
-		<p></p>
-		<p></p>
-		<li>Les balises de liste <strong>&lt; ol &gt;</strong> et <strong>&lt; ul &gt; </strong></li>
-		<p></p>
-			<ul>
-				<li>les balises <strong>&lt; ol &gt;&lt; /ol &gt; </strong>définissent un listing ordonnée et chaque élément de cette liste doit être balisé par <strong>&lt; li &gt; 1- ... &lt; /li &gt; </strong> par exemple sur cette page web, chaque parties du cours sont contenues dans une liste ordonnée et chaque partie est déterminé par un numéro</li> 
-				<li>les balises <strong>&lt; ol &gt;&lt; /ol &gt; </strong>définissent un listing desordonnée et chaque élément de cette liste doit être balisé par <strong>&lt; li &gt; ... &lt; /li &gt; </strong> par exemple sur cette page web, chaque sous parties du cours sont contenues dans une liste desordonnée et chaque partie est déterminé par une puce</li>
-			
-			</ul>	
-		<p></p>
-		<p></p>
-		<li>Les définitions <strong>&lt; dt &gt;</strong> et <strong>&lt; df &gt; </strong></li>
-		<p></p>
-			<ul>
-				<li>les définitions de termes <strong>&lt; dt &gt;&lt; /dt &gt; </strong> permet d'énumerer des termes à définir par les balises de définition décrites ci-dessous </li> 
-				<li><p>les définitions de termes <strong>&lt; dt &gt;&lt; /dt &gt; </strong>permet de définir les termes à définir contenues dans les balises <strong>&lt; dt &gt;&lt; /dt &gt; </strong></p>
+				</ul>
+			</section>
+
+
+			<section id="sémantique">
+  				<h3>Les balises du sémantiques <strong>&lt; body &gt; .... &lt; /body &gt; </strong></h3>
+				<ul>
+					<li><strong>&lt; h1 &gt; ... &lt; h1 &gt;</strong> qui définit les "headers" ou intitulés h1, h2, h3, h4, h5, h6. Le header h1 a la police la plus grande police parmis es header. Par convention il n'en faut pas plus de 6 par pages </li>
+					<li><strong>&lt; p &gt; ... &lt; /p &gt;</strong>  qui définit un bloc text avec un saut de ligne à la fin du bloc.</li>
+					<li><strong>&lt; em &gt; ... &lt; /em &gt;</strong> qui rend <em>italique</em> le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
+					<li><strong>&lt; strong &gt; ... &lt; /strong &gt;</strong> qui rend <strong>gras</strong> le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
+					<li><strong>&lt; mark &gt; ... &lt; /mark &gt;</strong>qui rend <mark>surligne</mark> le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
+					<li><strong>&lt;  &gt; ... &lt;  &gt;</strong></li>
+				</ul>
+			</section>
+
+
+			<section id="liste">
+  			<h3>Les balises de liste <strong>&lt; ol &gt;</strong> et <strong>&lt; ul &gt; </strong></h3>
+				<ul>
+					<li>les balises <strong>&lt; ol &gt;&lt; /ol &gt; </strong>définissent un listing ordonnée et chaque élément de cette liste doit être balisé par <strong>&lt; li &gt; 1- ... &lt; /li &gt; </strong> par exemple sur cette page web, chaque parties du cours sont contenues dans une liste ordonnée et chaque partie est déterminé par un numéro</li> 
+					<li>les balises <strong>&lt; ol &gt;&lt; /ol &gt; </strong>définissent un listing desordonnée et chaque élément de cette liste doit être balisé par <strong>&lt; li &gt; ... &lt; /li &gt; </strong> par exemple sur cette page web, chaque sous parties du cours sont contenues dans une liste desordonnée et chaque partie est déterminé par une puce</li>
+				</ul>	
+			</section>
+
+
+			<section id="definition">
+  			<h3>Les définitions <strong>&lt; dt &gt;</strong> et <strong>&lt; df &gt; </strong></h3>
+		
+				<ul>
+					<li>les définitions de termes <strong>&lt; dt &gt;&lt; /dt &gt; </strong> permet d'énumerer des termes à définir par les balises de définition décrites ci-dessous </li> 
+					<li><p>les définitions de termes <strong>&lt; dt &gt;&lt; /dt &gt; </strong>permet de définir les termes à définir contenues dans les balises <strong>&lt; dt &gt;&lt; /dt &gt; </strong></p>
 					<strong>ATTENTION ! UN TERME PEUT AVOIR PLUSIEURS DEFINITION ET UNE DEFINITION PRUY AVOIR PLUSIEURS TERMES</strong></li> 
+				</ul>
+			</section>
+		
+
+			<section id="code">
+  			<h3>Les balises <strong>&lt; pre &gt;</strong> et <strong>&lt; code &gt; </strong></h3>
+		
 			
-			</ul>
+			<p>Ces balises permettent d'unifier la police globale du texte contenu dans celles-ci. Cette méthode s'écrit de la manière suivante sous forme de code :</p>
+			<p><strong>&lt; pre &gt; &lt; code &gt; </strong> <em> votre bloc à unifier </em><strong>&lt; /code &gt; &lt; /pre &gt; </strong> </p>
+			</section>
+
+
+			<section id="tableau">
+	  			<h3>Les tableaux</h3>
+	  			<ul>
+					<li>Les tableaux en HTML sont déclarée par les balises &lt;table&gt;  &lt;/table&gt;</li>
+					<li>L'entête du tableaux désigne la première ligne par les balises &lt;thead&gt;  &lt;/thead&gt;</li>
+					<li>Le pied du tableaux désigne la dernière ligne par les balises &lt;thead&gt;  &lt;/thead&gt;</li>
+					<li>les colonnes sont en réalité définies par le nombre de cases successives que vous déclarer. Dans le cas des lignes de pied et d'entête, ces case son déclaré de la manière suivante &lt;th&gt;  &lt;/th&gt;</li>
+					<li>Le lignes du intermédiaires du tableaux désignant les lignes contenues entre les lignes d'entête et les lignes de pied du tableau. ces lignes sont déclarés par &lt;tr&gt;  &lt;/tr&gt;</li>
+					<li> Dans le cas des lignes intermédiare du tableau, les colonnes sont définies par le nombre de cases successives que vous déclarer &lt;td&gt;  &lt;/td&gt;</li>
+				</ul>
+				<table>
+					<thead>
+						<th> case 1 thead </th>
+						<th> case 2 thead</th>
+						<th></th>
+					</thead>
+					<tfoot >
+						<th> case1 tfoot </th>
+						<th> case2 tfoot </th>
+						<th></th>
+					</tfoot>
+					<tr>
+						<td>case 1 inter</td>
+						<td>case 3 inter</td>
+						<td></td>
+					</tr>
+				</table>
+
+				<p> Ce tableau ci-dessus, est codé selon les règles énoncées précedement de la façon suivante.</p>
+				<pre>
+					&lt;table&gt;
+					&lt;thead&gt;
+						&lt;th&gt; case 1 thead &lt;/th&gt;
+						&lt;th&gt; case 2 thead &lt;/th&gt;
+						&lt;th&gt;&lt;/th&gt;
+					&lt;/thead&gt;
+					&lt;tfoot &gt;
+						&lt;th&gt; case1 tfoot &lt;/th&gt;
+						&lt;th&gt; case2 tfoot &lt;/th&gt;
+						&lt;th&gt;&lt;/th&gt;
+					&lt;/tfoot&gt;
+						&lt;tr&gt;
+							&lt;td&gt;case 1 inter&lt;/td&gt;
+							&lt;td&gt;case 2 inter&lt;/td&gt;
+							&lt;td&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/table&gt;
+				</pre>
+				<p>Attention en absence de thead et/ou tfoot le tableau et défini par défaut par les balise &lt;tr&gt;  &lt;/tr&gt; et &lt;td&gt;  &lt;/td&gt;</p>
+
+			</section>
+
+
+			<section id="CSS">
+  			<h3>Aspect de mise en forme et CSS</h3>
 		
-		<p></p>
-		<p></p>
-		<li>Les BALISES <strong>&lt; pre &gt;</strong> et <strong>&lt; code &gt; </strong></li>
-		<p></p>
-		<p>Ces balisent permette d'unifier la police globale du texte contenu dans celles-ci. Cette méthode s'écrit de la manière suivante sous forme de code :</p>
-		<p><strong>&lt; pre &gt; &lt; code &gt; </strong> <em> votre bloc à unifier </em><strong>&lt; /code &gt; &lt; /pre &gt; </strong> </p>
-		<p></p>
-		<p></p>
-		<li>Aspect de mise en forme et CSS</li>
-		<p></p>
-		<p>Dans cette page d'initiation, aucune balises de mise en forme a été utilisée car elles biaisent le caractère sémantique du contenu de ces balises. Ces balises sont devenues actuellement obsolètes et c'est le langage CSS qui permet de définir la mise en page. la mise en page sans CSS est en réalité la mise en page CSS par défaut. Cela signifie que le texte contenu dans le corps de la page web va prendre tous l'espace disponible pour être afficher. Afin d'illustrer ce principe, je vous laisse jouer avec la taille de votre fenêtre web vous constaterez que le texte s'adapte à la taille de votre fenêtre. Seul l'implémentation de code CSS permet de réaliser une mise en fome particulière et pouvant être statique</p>
-		
-		
-	</ol>
-	<p></p>
+			
+			<p>Dans cette page d'initiation, aucune balises de mise en forme a été utilisée car elles biaisent le caractère sémantique du contenu de ces balises. Ces balises sont devenues actuellement obsolètes et c'est le langage CSS qui permet de définir la mise en page. la mise en page sans CSS est en réalité la mise en page CSS par défaut. Cela signifie que le texte contenu dans le corps de la page web va prendre tous l'espace disponible pour être afficher. Afin d'illustrer ce principe, je vous laisse jouer avec la taille de votre fenêtre web vous constaterez que le texte s'adapte à la taille de votre fenêtre. Seul l'implémentation de code CSS permet de réaliser une mise en fome particulière et pouvant être statique</p>
+			</section>
+
+			
+		</div>
+
+	<footer id="footer">
+			
+			<h3>page réalisée par Quentin</h3>
+			<img id="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">	
+
+		</footer>
 	</body>
 	
 </html>
