@@ -3,118 +3,23 @@
 <html lang="fr">
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- balise meta  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
 		<title > Cours initiation HTML et CSS  </title>
-
-		<style type="text/css">
-
-			body{
-    		margin-top: 0px;
-    		background:#ffff;
-			}
-
-			table {
-			border-collapse:collapse;
- 			border-width:1px; 
- 			border-style:solid; 
- 			border-color:black;
- 			width:400px;
- 			height: 75px;
- 			}
-
-			td { 
-			text-align:center;
- 			border-width:1px;
-			border-style:solid; 
- 			border-color:black;
-			width:400px;
-			height: 75px;
-			}
-
-			th { 
- 			border-width:1px;
-			border-style:solid; 
- 			border-color:black;
-			width:200px;
-			height: 75px;
-			}
-
-			header {
-			padding: 0;
-   			height:10%;
-    		background:#F0F0F0;
-    		border:0px solid #CCC;
-    		text-align: center;
-			}
-
-			footer {
-			padding: 0;
-   			height:10%;
-    		background:#F0F0F0;
-    		border:0px solid #CCC;
-    		text-align: center;
-			}
-
-			#catimg0 {
-			height: 25%;
-   			width: 15%;
-			}
-
-			#catimg1 {
-			height: 25%;
-   			width: 15%;
-			}
-
-			#navigator {
-			list-style: none;
-			position:fixed;
-    		background: #F0F0F0;
-    		border: 0px solid #CCC;
-   			height: 50%;
-   			width: 20%;
-   			margin-top : 0;
-   			right: 0; 
-   			}
-
-   			#content {
-    		background: #FFFFFF;
-   			height: 90%;
-   			width: 80%;
-   			margin-top : 75px;
-			}
-
- 
-		</style>
-		
 	</head>
 	
 	<body>
-		<header id="header">
+		<div class="rowbox">
+			<div class="header">
+				<header>
 			
-			<img id="catimg0" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
-			<h1>Initiation au language HTML et CSS</h1>
+					<img id="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
+					<h2>Initiation au language HTML et CSS</h2>
 			
-		</header>
+				</header>
+			</div>
 
-		<nav id="navigator">
-			<h4>Dans cette page:</h4>
-			<ul>
-				<li><a href="#structure">Structure d'une page web.</a></li>
-				<li><a href="#encodage">importation d'encodage.</a></li>
-				<li><a href="#sémantique">Les balises sémantiques </a></li>
-				<li><a href="#liste">Les balises de liste </a></li>
-				<li><a href="#definition">Les balises de définitions </a></li>
-				<li><a href="#code">Les balises de code et unification</a></li>
-				<li><a href="#tableau">Les tableaux</a></li>
-				<li><a href="#section/articles">Les sections et articles</a></li><li><a href="#tableau">Les tableaux</a></li>
-				<li><a href="#nav">Les navigateur</a></li><li><a href="#tableau">Les tableaux</a></li>
-				<li><a href="#lien">Les liens</a></li>
-				<li><a href="#CSS">Aspect de mise en forme et CSS</a></li>
-			</ul>
-		</nav>
-		
-		
-		<div id="content">
-			<p> <Strong> <u> Définition :</u> </Strong> Une page web est codé avec le langage HTML qui structure les éléments mais aussi est codé grâce au CSS qui permet de réaliser la mise en page.
+			<div class="content">
+				<p id="def"> <Strong> <u> Définition :</u> </Strong> Une page web est codé avec le langage HTML (Hyper Text Markup Language) qui structure les éléments. il est compété par le CSS (Cascading Style Sheets) qui permet de réaliser la mise en page par feuille de style.
 			Le HTML est un langage balisé, chaque élément est défini par une balise ouvrante &lt; balise &gt; ainsi qu'une balise fermante &lt; /balise &gt; 
 			Les balises peuvent être imbriquées les unes dans les autres tant que la structure de base est respectée</p>
 
@@ -161,7 +66,7 @@
 					<li><strong>&lt; p &gt; ... &lt; /p &gt;</strong>  qui définit un bloc text avec un saut de ligne à la fin du bloc.</li>
 					<li><strong>&lt; em &gt; ... &lt; /em &gt;</strong> qui rend <em>italique</em> le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
 					<li><strong>&lt; strong &gt; ... &lt; /strong &gt;</strong> qui rend <strong>gras</strong> le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
-					<li><strong>&lt; mark &gt; ... &lt; /mark &gt;</strong>qui rend <mark>surligne</mark> le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
+					<li><strong>&lt; mark &gt; ... &lt; /mark &gt;</strong>qui <mark>surligne</mark> le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
 					<li><strong>&lt;  &gt; ... &lt;  &gt;</strong></li>
 				</ul>
 			</section>
@@ -313,16 +218,36 @@
 			
 			<p>Dans cette page d'initiation, aucune balises de mise en forme a été utilisée car elles biaisent le caractère sémantique du contenu de ces balises. Ces balises sont devenues actuellement obsolètes et c'est le langage CSS qui permet de définir la mise en page. la mise en page sans CSS est en réalité la mise en page CSS par défaut. Cela signifie que le texte contenu dans le corps de la page web va prendre tous l'espace disponible pour être afficher. Afin d'illustrer ce principe, je vous laisse jouer avec la taille de votre fenêtre web vous constaterez que le texte s'adapte à la taille de votre fenêtre. Seul l'implémentation de code CSS permet de réaliser une mise en fome particulière et pouvant être statique</p>
 			</section>
-
-			
-		</div>
-
-	<footer id="footer">
+			<footer id="footer">
 			
 			<h3>page réalisée par Quentin</h3>
-			<img id="catimg1" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">	
 
-		</footer>
+			</footer>
+
+			
+			</div>
+		</div >
+		
+		<div class="rowbox" class="nav">
+			<nav class="nav">
+				<h4>Dans cette page:</h4>
+				<ul>
+					<li><a href="#def">Définition du HTML</a></li>
+					<li><a href="#structure">Structure d'une page web.</a></li>
+					<li><a href="#encodage">importation d'encodage.</a></li>
+					<li><a href="#sémantique">Les balises sémantiques </a></li>
+					<li><a href="#liste">Les balises de liste </a></li>
+					<li><a href="#definition">Les balises de définitions </a></li>
+					<li><a href="#code">Les balises de code et unification</a></li>
+					<li><a href="#tableau">Les tableaux</a></li>
+					<li><a href="#section/articles">Les sections et articles</a></li>
+					<li><a href="#lien">Les liens</a></li>
+					<li><a href="#nav">Les navigateur</a></li>
+					<li><a href="#CSS">Aspect de mise en forme et CSS</a></li>
+				</ul>
+			</nav>
+
+		</div>
+		
 	</body>
-	
 </html>
