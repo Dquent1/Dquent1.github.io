@@ -1,199 +1,166 @@
 /*style globale de la page*/
-			body{
-			background-image: url("hci-certificate.jpg");
-			background-size: 100%;
-    		margin-top: 10%;
-			}
+			body {
+		display: flex;
+		flex-direction: row;
+		max-width: 2000px;
+		min-width: 320px;
+		margin-top: 20px;
+		font-size: 1em;	
+		color: black;
+		background-image: url("hci-certificate.jpg");
+		background-size: 100%;
+		}
 
-			table {
-			border-collapse:collapse;
- 			border-width:1px; 
- 			border-style:solid; 
- 			border-color:black;
- 			}
+		.flexdirrow {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		}
 
-			td { 
-			text-align:center;
- 			border-width:1px;
-			border-style:solid; 
- 			border-color:black;
-			width:150px;
-			height: 75px;
-			}
+		.flexdirrcol{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		}
 
-			th { 
- 			border-width:1px;
-			border-style:solid; 
- 			border-color:black;
-			width:150px;
-			height: 75px;
-			}
+		.maincontainer {
+		margin-top: 100px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		}
 
-			footer {
-			position: relative;
-			bottom: -100px;
-			left: -25px;
-   			width: 1600px;
-   			height: 60px;
-    		background:#F0F0F0;
-    		border:0px solid #CCC;
-    		text-align: center;
-			}
 
-			.rowbox	{
-			display: inline-flex;
-			}
+		.header-container {
+		z-index: 1;
+		position: fixed;
+		flex-direction: row;
+		width: 70%;
+		top:2%;
+		left:24%;
+		border: 0.5em solid blue;
+		border-radius: 5%/20%;
+		}
 
-			.header {
-			display: block;
-			position:fixed;
-			text-align: center;
-    		left: 10px;
-    		top :10px;
-   			width: 1110px;
-   			border-radius: 5%/5%;
-    		border:5px solid blue;
-			}
 
-			#catimg {
-			height: 10%;
-   			width: 5%;
-			}
+		.catimg {
+		height: 10%;
+   		width: 5%;
+		}
 
-			div > form {
-			display: flex;
-			flex-direction: column;
-			padding: 15px;
-			}
+		.middle {
+		z-index: 2;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		}
 
-			.formulaire {
-			position:fixed;
-    		margin-left: 50px;
-    		border:5px solid blue;
-    		border-radius: 5%;
-    		top: 0px;
-   			width: 300px;
-   			right: 30px; 
-			}
+		.text-container {
+		background: white;
+		flex-direction: column;
+		margin-left: 20%;
+		padding: 2%;
+		width: 70%;
+		border: 0.5em solid blue;
+		border-radius: 3%;
+		}
 
-			input:valid{
+		.text-container h3 {
+			color: red;
+			text-decoration: underline;
+		}
+
+		table {
+		border-collapse:collapse;
+ 		border-width:1px; 
+ 		border-style:solid; 
+ 		border-color:black;
+ 		}
+
+		td { 
+		text-align:center;
+ 		border-width:1px;
+		border-style:solid; 
+ 		border-color:black;
+		width:10em;
+		height: 5em;
+		}
+
+		th { 
+ 		border-width:1px;
+		border-style:solid; 
+ 		border-color:black;
+		width:10em;
+		height: 5em;
+		}
+
+		.formnav-container {
+		position:fixed;
+		justify-content: space-around;
+		left: 20px;
+		margin-right: 40px;
+		padding-right: 40px;
+		width: 20%;
+		}
+
+		.form-container {
+		justify-content: center;
+		padding: 5%;
+		border: 0.5em solid blue;
+		border-radius: 3%;
+		width: 80%;
+		height: 50%;
+		}
+
+		input:valid{
 			background: #CFF9B7;
 			}
 
 			input:invalid{
 			background: #F9B7B7;
-			}
+		}
 
-			.content {
-   			display: flex;
-   			flex-direction: column;
-    		position:relative;
-    		border:5px solid blue;
-    		border-radius: 2%;
-   			margin: auto;
-   			top: 10px;
-   			padding: 10px;
-    		background: #FFFFFF;
-   			width: 1100px;		
-			}
+		
+		.nav-container {
+		border: 1px solid blue;
+		width: 80%;
+		height: 40%;
+		margin-top: 2%;
+		padding-right: 10%;
+		border: 0.5em solid blue;
+		border-radius: 3%;
+		align-items: center;
+		}
 
-			.content h3 {
-			color: red;
-			text-decoration: underline;
-			}
+		nav ul {
+		list-style: none;
+		}
 
-			.souligne {
-			text-decoration: underline;
-			}
+		.nav-container div {
+   		text-align: center;
+   		background: red;
+   		border:2px solid black;
+   		border-radius: 10%/10%;
+   		transition: background 0.5s, transform 0.5s;
+   		transition: width 0.5s, height 0.5s, background 0.5s, transform 0.5s;
+   		}
 
-			nav ul{
-			list-style: none;
-			}
+   		.nav-container div:hover {
+   		background: #FFF;
+   		border:2px solid red;
+   		transform: rotate(360deg);
+   		}
 
-			.nav {
-			display: inline-flex;
-			list-style: none;
-			position:fixed;
-    		border:5px solid blue;
-    		border-radius: 5%;
-    		top:370px;
-   			width: 300px;
-   			right: 30px; 
-   			}
+   		a:visited {
+   		color: blue;
+		}
 
-   			.nav div {
-   			text-align: center;
-   			background: red;
-   			border:2px solid black;
-   			border-radius: 10%/10%;
-   			transition: background 0.5s, transform 0.5s;
-   			transition: width 0.5s, height 0.5s, background 0.5s, transform 0.5s;
-   			}
-
-   			.nav div:hover {
-   			background: #FFF;
-   			border:2px solid red;
-   			transform: rotate(360deg);
-   			/*animation-duration: 2s;
-   			animation-name: helico;
-   			animation-iteration-count: 1;
-   			animation-direction: alternate;*/
-   			}
-
-   			a:visited {
-   			color: blue;
-   			}
-
-   			/*@keyframes helico {
-   				from { margin-left: 0%;
-
-   				}
-   				50%{ margin-top: 25%;
-
-   				}
-   				to { margin-right: 100%;
-
-   				}
-   			}*/
-
-   			
-/*style des exemples énoncés*/
-#metal1 {
-z-index: 1;
-position: relative; 
-top : 0px;
-left: 0px;
-text-align: center;
-background-image:url(https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg );
-}
-
-#metal2 {
-z-index: 2;
-position: relative; 
-top : -150px;
-left:  150px;
-background-image:url(http://images.memes.com/meme/838184);
-}
-
-#metal3 {
-z-index: 3;
-position: relative; 
-top : -300px;
-left: 300px;
-background-image:url(https://s-media-cache-ak0.pinimg.com/564x/2e/78/15/2e78151b6b5997c64b77f5f902c75819.jpg);
-}
-
-
-.colorfontform {
-border-radius: 30%/80%;
-height: 300px;
-width: 300px;
-border:5px solid #000;
-background-size: 100%;
-text-align: center;
-color: red;
-font-size: 20;
-}
+		.footer-container footer {
+		position: relative;
+		bottom: -2%; 
+		text-align: center;
+		}
 
 #inspecteur {
 height: 15%%;
