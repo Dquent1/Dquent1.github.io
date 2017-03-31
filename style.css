@@ -2,8 +2,6 @@
 			body {
 		display: flex;
 		flex-direction: row;
-		max-width: 2000px;
-		min-width: 320px;
 		margin-top: 20px;
 		font-size: 1em;	
 		color: black;
