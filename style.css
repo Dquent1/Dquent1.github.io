@@ -69,6 +69,43 @@
 			text-decoration: underline;
 		}
 
+		#metal1 {
+		z-index: 1;
+		position: relative; 
+		top : 0px;
+		left: 0px;
+		text-align: center;
+		background-image:url(https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg );
+		}
+
+		#metal2 {
+		z-index: 2;
+		position: relative; 
+		top : -150px;
+		left:  150px;
+		background-image:url(http://images.memes.com/meme/838184);
+		}
+
+		#metal3 {
+		z-index: 3;
+		position: relative; 
+		top : -300px;
+		left: 300px;
+		background-image:url(https://s-media-cache-ak0.pinimg.com/564x/2e/78/15/2e78151b6b5997c64b77f5f902c75819.jpg);
+		}
+
+
+		.colorfontform {
+		border-radius: 30%/80%;
+		height: 300px;
+		width: 300px;
+		border:5px solid #000;
+		background-size: 100%;
+		text-align: center;
+		color: red;
+		font-size: 20;
+		}
+
 		table {
 		border-collapse:collapse;
  		border-width:1px; 
