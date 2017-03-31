@@ -9,18 +9,23 @@
 	</head>
 	
 	<body>
-		<div class="rowbox">
-			<div class="header">
-				<header>
-			
-					<img id="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
-					<h2>Initiation au language HTML et CSS</h2>
-			
-				</header>
-			</div>
+		<div class="maincontainer">
 
-			<div class="formulaire">
-				<form action="" method="post">
+	<div class="header-container">
+	<header class="flexdirrow">
+			
+		<img class="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
+		<h2>Initiation au language HTML et CSS</h2>
+		<img class="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
+			
+	</header>
+	</div>
+
+	<div class="middle">
+
+		<div class="formnav-container">			
+			<div class="form-container">
+				<form action="" method="post" class="flexdirrcol">
 					<label for="nom"> nom :</label>
 					<input type="text" name="nom" id="nom" required="true">
 					
@@ -80,8 +85,28 @@
 				</form>	
 			</div>
 
-			<div class="content">
-				<p id="def"> <Strong> <span class="souligne"> Définition :</span> </Strong> Une page web est codé avec le langage HTML (Hyper Text Markup Language) qui structure les éléments. il est compété par le CSS (Cascading Style Sheets) qui permet de réaliser la mise en page par feuille de style.
+			<div class="nav-container">
+				<nav class="nav">
+				<ul>
+					<div><li><a href="#def">Définition du HTML</a></li></div>
+					<div><li><a href="#structure">Structure d'une page web.</a></li></div>
+					<div><li><a href="#encodage">importation d'encodage.</a></li></div>
+					<div><li><a href="#sémantique">Les balises sémantiques </a></li></div>
+					<div><li><a href="#liste">Les balises de liste </a></li></div>
+					<div><li><a href="#definition">Les balises de définitions </a></li></div>
+					<div><li><a href="#code">Les balises de code et unification</a></li></div>
+					<div><li><a href="#tableau">Les tableaux</a></li></div>
+					<div><li><a href="#section/articles">Les sections et articles</a></li></div>
+					<div><li><a href="#lien">Les liens</a></li></div>
+					<div><li><a href="#nav">Les navigateur</a></li></div>
+					<div><li><a href="#CSS">Aspect de mise en forme et CSS</a></li></div>
+				</ul>
+			</nav>
+			</div>
+		</div>
+		
+		<div class="text-container">
+			<p id="def"> <Strong> <span class="souligne"> Définition :</span> </Strong> Une page web est codé avec le langage HTML (Hyper Text Markup Language) qui structure les éléments. il est compété par le CSS (Cascading Style Sheets) qui permet de réaliser la mise en page par feuille de style.
 			Le HTML est un langage balisé, chaque élément est défini par une balise ouvrante &lt; balise &gt; ainsi qu'une balise fermante &lt; /balise &gt; 
 			Les balises peuvent être imbriquées les unes dans les autres tant que la structure de base est respectée</p>
 
@@ -403,34 +428,18 @@
 			</code>	
 			</pre>
 			</section>
+		</div>
 
-			<footer id="footer">
+	</div>
+	
+	<div class="footer-container">
+		<footer id="footer">
 			
 			<h3>page réalisée par Quentin</h3>
 
-			</footer>
+		</footer>
+</div>
 
-			
-			</div>
-		</div >
-		
-			<nav class="nav">
-				<ul>
-					<div><li><a href="#def">Définition du HTML</a></li></div>
-					<div><li><a href="#structure">Structure d'une page web.</a></li></div>
-					<div><li><a href="#encodage">importation d'encodage.</a></li></div>
-					<div><li><a href="#sémantique">Les balises sémantiques </a></li></div>
-					<div><li><a href="#liste">Les balises de liste </a></li></div>
-					<div><li><a href="#definition">Les balises de définitions </a></li></div>
-					<div><li><a href="#code">Les balises de code et unification</a></li></div>
-					<div><li><a href="#tableau">Les tableaux</a></li></div>
-					<div><li><a href="#section/articles">Les sections et articles</a></li></div>
-					<div><li><a href="#lien">Les liens</a></li></div>
-					<div><li><a href="#nav">Les navigateur</a></li></div>
-					<div><li><a href="#CSS">Aspect de mise en forme et CSS</a></li></div>
-				</ul>
-			</nav>
+</body>
 
-		
-	</body>
 </html>
