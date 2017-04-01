@@ -1,7 +1,8 @@
-/*style globale de la page*/
-			body {
+body {
 		display: flex;
 		flex-direction: row;
+		max-width: 2000px;
+		min-width: 320px;
 		margin-top: 20px;
 		font-size: 1em;	
 		color: black;
@@ -36,9 +37,17 @@
 		flex-direction: row;
 		width: 70%;
 		top:2%;
-		left:23%;
+		left:24%;
 		border: 0.5em solid blue;
 		border-radius: 5%/20%;
+		}
+
+		.logo {
+		position: fixed;
+		top : -80px;
+		left: 0;
+		width: 20%;
+		height: 30%
 		}
 
 
@@ -67,6 +76,42 @@
 		.text-container h3 {
 			color: red;
 			text-decoration: underline;
+		}
+
+		.text-container h3::after {
+		content: " ✧"
+		}
+
+		.text-container h3::before {
+		content: "✧ "
+		}
+
+		.souligne {
+		text-decoration: underline;
+		}
+
+		table {
+		border-collapse:collapse;
+ 		border-width:1px; 
+ 		border-style:solid; 
+ 		border-color:black;
+ 		}
+
+		td { 
+		text-align:center;
+ 		border-width:1px;
+		border-style:solid; 
+ 		border-color:black;
+		width:10em;
+		height: 5em;
+		}
+
+		th { 
+ 		border-width:1px;
+		border-style:solid; 
+ 		border-color:black;
+		width:10em;
+		height: 5em;
 		}
 
 		#metal1 {
@@ -104,30 +149,6 @@
 		text-align: center;
 		color: red;
 		font-size: 20;
-		}
-
-		table {
-		border-collapse:collapse;
- 		border-width:1px; 
- 		border-style:solid; 
- 		border-color:black;
- 		}
-
-		td { 
-		text-align:center;
- 		border-width:1px;
-		border-style:solid; 
- 		border-color:black;
-		width:10em;
-		height: 5em;
-		}
-
-		th { 
- 		border-width:1px;
-		border-style:solid; 
- 		border-color:black;
-		width:10em;
-		height: 5em;
 		}
 
 		.formnav-container {
@@ -197,7 +218,6 @@
 		text-align: center;
 		}
 
-#inspecteur {
-height: 15%%;
-width:70%;
- }
+
+
+
