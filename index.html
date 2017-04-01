@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- balise meta  -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Initiation au language HTML et CSS</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-		<title > Cours initiation HTML et CSS  </title>
-	</head>
-	
-	<body>
+</head>
+<body>
 <div class="maincontainer">
 
 	<div class="header-container">
@@ -43,7 +40,7 @@
 
 					<div class="rowbox">
 						<input type="checkbox" name="choix" value="2" id="choix2">
-						<label for="choix2">pertinent</label>
+						<label for="choix2">pertinant</label>
 					</div>
 
 
@@ -114,12 +111,12 @@
 
 			<section id="structure">
   				<h3>Structure d'une page web.</h3>
-				<p>La structure de base d'une page web est constitué de plusieurs éléments balisés essentiels à l'interpretation du code source et doit contenir</p>
+				<p>La structure de base d'une page web est constituée de plusieurs éléments balisés essentiels à l'interpretation du code source et doit contenir</p>
 				<ul>
 					<li>La description STRICTEMENT nécessaire du type du document définie par : &lt; !DOCTYPE html &gt; </li>
 					<li>une balise <strong>&lt; html &gt;  ....&lt; /html &gt;</strong> qui est la balise définissant les limite du code HTML et se doit de contenir la balise suivant dans la liste </li>
-					<li>une balise <strong>&lt; head &gt; .... &lt; /head &gt; </strong>qui permet de défninir le nom de référence de la page web et peut contenir d'autre informations de type "meta" qui vont agir sur le document</li>
-					<li>la balise <strong>&lt; head &gt;</strong> contient de ce fait la balise title qui définie le nom de référence de la page. ici le nom de la page est <strong>&lt;title&gt; Cours initiation HTML et CSS  &lt;/title&gt;</strong> Attention une page web a un seul et unique "title"</li>
+					<li>une balise <strong>&lt; head &gt; .... &lt; /head &gt; </strong>qui permet de définir le nom de référence de la page web et peut contenir d'autre informations de type "meta" qui vont agir sur le document</li>
+					<li>la balise <strong>&lt; head &gt;</strong> contient de ce fait la balise title qui définit le nom de référence de la page. ici le nom de la page est <strong>&lt;title&gt; Cours initiation HTML et CSS  &lt;/title&gt;</strong> Attention une page web a un seul et unique "title"</li>
 					<li>Pour finir une page html doit contenir une balise <strong>&lt; body &gt; .... &lt; /body &gt; </strong> qui définir le corps/contenu de la page web</li>
 				</ul>
 				<p>Exemple de structure de base:</p>
@@ -141,17 +138,17 @@
 			<section id="encodage">
   				<h3>Importation d'encodage.</h3>
 				<ul>
-					<li>Les caratère spéciaux comme es lettre accentué nécéssite "l'importation d'un type unicode. Cette action se réalise dans la partie <strong>&lt; head &gt; .... &lt; /html &gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;</strong></li>
+					<li>Les caratères spéciaux comme les lettres accentuées nécessitent "l'importation d'un type unicode. Cette action se réalise dans la partie <strong>&lt; head &gt; .... &lt; /html &gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;</strong></li>
 			
 				</ul>
 			</section>
 
 
-			<section id="sémantique">
-  				<h3>Les balises du sémantiques <strong>&lt; body &gt; .... &lt; /body &gt; </strong></h3>
+			<section id="sémentique">
+  				<h3>Les balises sémantiques du<strong>&lt; body &gt; .... &lt; /body &gt; </strong></h3>
 				<ul>
-					<li><strong>&lt; h1 &gt; ... &lt; h1 &gt;</strong> qui définit les "headers" ou intitulés h1, h2, h3, h4, h5, h6. Le header h1 a la police la plus grande police parmis es header. Par convention il n'en faut pas plus de 6 par pages </li>
-					<li><strong>&lt; p &gt; ... &lt; /p &gt;</strong>  qui définit un bloc text avec un saut de ligne à la fin du bloc.</li>
+					<li><strong>&lt; h1 &gt; ... &lt; h1 &gt;</strong> qui définit les "headers" ou intitulés h1, h2, h3, h4, h5, h6. Le header h1 a la police la plus grande police parmi es header. Par convention il n'en faut pas plus de 6 par pages </li>
+					<li><strong>&lt; p &gt; ... &lt; /p &gt;</strong>  qui définit un bloc texte avec un saut de ligne à la fin du bloc.</li>
 					<li><strong>&lt; em &gt; ... &lt; /em &gt;</strong> qui rend <em>italique</em> le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
 					<li><strong>&lt; strong &gt; ... &lt; /strong &gt;</strong> qui rend <strong>gras</strong> le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
 					<li><strong>&lt; mark &gt; ... &lt; /mark &gt;</strong>qui <mark>surligne</mark> le texte contenu dans cette balise et permet de conserver l'aspect sémantique du texte contenu dans cette balise.</li>
@@ -164,7 +161,7 @@
   			<h3>Les balises de liste <strong>&lt; ol &gt;</strong> et <strong>&lt; ul &gt; </strong></h3>
 				<ul>
 					<li>les balises <strong>&lt; ol &gt;&lt; /ol &gt; </strong>définissent un listing ordonnée et chaque élément de cette liste doit être balisé par <strong>&lt; li &gt; 1- ... &lt; /li &gt; </strong> par exemple sur cette page web, chaque parties du cours sont contenues dans une liste ordonnée et chaque partie est déterminé par un numéro</li> 
-					<li>les balises <strong>&lt; ol &gt;&lt; /ol &gt; </strong>définissent un listing desordonnée et chaque élément de cette liste doit être balisé par <strong>&lt; li &gt; ... &lt; /li &gt; </strong> par exemple sur cette page web, chaque sous parties du cours sont contenues dans une liste desordonnée et chaque partie est déterminé par une puce</li>
+					<li>les balises <strong>&lt; ol &gt;&lt; /ol &gt; </strong>définissent un listing désordonnée et chaque élément de cette liste doit être balisé par <strong>&lt; li &gt; ... &lt; /li &gt; </strong> par exemple sur cette page web, chaque sous parties du cours sont contenues dans une liste désordonnée et chaque partie est déterminé par une puce</li>
 				</ul>	
 			</section>
 
@@ -173,7 +170,7 @@
   			<h3>Les définitions <strong>&lt; dt &gt;</strong> et <strong>&lt; df &gt; </strong></h3>
 		
 				<ul>
-					<li>les définitions de termes <strong>&lt; dt &gt;&lt; /dt &gt; </strong> permet d'énumerer des termes à définir par les balises de définition décrites ci-dessous </li> 
+					<li>les définitions de termes <strong>&lt; dt &gt;&lt; /dt &gt; </strong> permet d'énumérer des termes à définir par les balises de définition décrites ci-dessous </li> 
 					<li><p>les définitions de termes <strong>&lt; dt &gt;&lt; /dt &gt; </strong>permet de définir les termes à définir contenues dans les balises <strong>&lt; dt &gt;&lt; /dt &gt; </strong></p>
 					<strong>ATTENTION ! UN TERME PEUT AVOIR PLUSIEURS DEFINITION ET UNE DEFINITION PRUY AVOIR PLUSIEURS TERMES</strong></li> 
 				</ul>
@@ -193,11 +190,11 @@
 	  			<h3>Les tableaux</h3>
 	  			<ul>
 					<li>Les tableaux en HTML sont déclarée par les balises &lt;table&gt;  &lt;/table&gt;</li>
-					<li>L'entête du tableaux désigne la première ligne par les balises &lt;thead&gt;  &lt;/thead&gt;</li>
-					<li>Le pied du tableaux désigne la dernière ligne par les balises &lt;thead&gt;  &lt;/thead&gt;</li>
-					<li>les colonnes sont en réalité définies par le nombre de cases successives que vous déclarer. Dans le cas des lignes de pied et d'entête, ces case son déclaré de la manière suivante &lt;th&gt;  &lt;/th&gt;</li>
-					<li>Le lignes du intermédiaires du tableaux désignant les lignes contenues entre les lignes d'entête et les lignes de pied du tableau. ces lignes sont déclarés par &lt;tr&gt;  &lt;/tr&gt;</li>
-					<li> Dans le cas des lignes intermédiare du tableau, les colonnes sont définies par le nombre de cases successives que vous déclarer &lt;td&gt;  &lt;/td&gt;</li>
+					<li>L'entête du tableau désigne la première ligne par les balises &lt;thead&gt;  &lt;/thead&gt;</li>
+					<li>Le pied du tableau désigne la dernière ligne par les balises &lt;thead&gt;  &lt;/thead&gt;</li>
+					<li>les colonnes sont en réalité définies par le nombre de cases successives que vous déclarez. Dans le cas des lignes de pied et d'entête, ces case son déclaré de la manière suivante &lt;th&gt;  &lt;/th&gt;</li>
+					<li>Les lignes intermédiaires du tableau désignant les lignes contenues entre les lignes d'entête et les lignes de pied du tableau. ces lignes sont déclarés par &lt;tr&gt;  &lt;/tr&gt;</li>
+					<li> Dans le cas des lignes intermédiaires du tableau, les colonnes sont définies par le nombre de cases successives que vous déclarez &lt;td&gt;  &lt;/td&gt;</li>
 				</ul>
 				<table>
 					<thead>
@@ -221,7 +218,7 @@
 					</tr>
 				</table>
 
-				<p> Ce tableau ci-dessus, est codé selon les règles énoncées précedement de la façon suivante.</p>
+				<p> Ce tableau ci-dessus, est codé selon les règles énoncées précédemment de la façon suivante.</p>
 				<pre>
 					&lt;table&gt;
 					&lt;thead&gt;
@@ -263,8 +260,8 @@
 	
 			<p>Les liens permettent de rediriger vers un DOM existant en utilisant la balise &lt;a&gt; &lt;/a&gt; et contient différent attributs</p>
 			<ul>
-				<li> L'attibut <strong>href="url"</strong> qui est nécessaire et permet de définir l'url de redirection du lien</li>
-				<li> L'attribut <strong>target="url"</strong> pour lequel il existe plusieur valeurs :</li>
+				<li> L'attribut <strong>href="url"</strong> qui est nécessaire et permet de définir l'url de redirection du lien</li>
+				<li> L'attribut <strong>target="url"</strong> pour lequel il existe plusieurs valeurs :</li>
 				<ul>
 					<li>_self : charge la réponse dans le contexte de navigation courant. Il s'agit de la valeur par défaut quand l'attribut n'est pas renseigné.</li>
 					<li>_blank : charge la réponse dans un nouveau contexte de navigation.</li>
@@ -279,7 +276,7 @@
   			<h3>Les balises nav</h3>
 		
 			
-			<p>ce sont des menus contextuels qui permettent de réaliser la navigation au sein du site ou au sein du DOM par le biais de liens listés. Ils sont balisés par &lt;nav&gt; &lt;/nav&gt;. Sur cette page, il existe un nvaigateur qui liste des liens permettant de naviguer sur les différentes sections du corps du DOM. Ce navigateur a été codé comme suit :</p>
+			<p>Ce sont des menus contextuels qui permettent de réaliser la navigation au sein du site ou au sein du DOM par le biais de liens listés. Ils sont balisés par &lt;nav&gt; &lt;/nav&gt;. Sur cette page, il existe un menu qui liste des liens permettant de naviguer sur les différentes sections du corps du DOM. Ce navigateur a été codé comme suit :</p>
 			<pre>
 			&lt;nav id="navigator"&gt;
 			&lt;h4&gt;Dans cette page:&lt;/h4&gt;
@@ -303,7 +300,7 @@
 			<section id="CSS">
   			<h3>Aspect de mise en forme et CSS</h3>
 		
-			<p>Dans cette page d'initiation, aucune balises de mise en forme a été utilisée car elles biaisent le caractère sémantique qu'elles contienent. Ces balises sont dorénavant obsolètes et c'est le langage CSS qui permet de définir la mise en page. la mise en page sans CSS est en réalité la mise en page CSS par défaut. Cela signifie que le texte contenu dans le corps de la page web va prendre tous l'espace disponible pour être afficher ce sont les règles CSS par défaut. Celles-ci peuvent être modifiée par le biais de feuilles de style dont l'extension est *.css. il est possible grâce à ce langage de définir la position la taille de ces objets afin de les afficher selon vos désirs. l'exemple ci-dessous permet de se faire une petite idée</p>
+			<p>Dans cette page d'initiation, aucune balise de mise en forme n’a été utilisée car elles biaisent le caractère sémantique qu'elles contiennent. Ces balises sont dorénavant obsolètes et c'est le langage CSS qui permet de définir la mise en page. La mise en page sans CSS est en réalité la mise en page CSS par défaut. Cela signifie que le texte contenu dans le corps de la page web va prendre tous l'espace disponible pour être afficher ce sont les règles CSS par défaut. Celles-ci peuvent être modifiée par le biais de feuilles de style dont l'extension est *.css. Il est possible grâce à ce langage de définir la position la taille de ces objets afin de les afficher selon vos désirs. L’exemple ci-dessous permet de se faire une petite idée</p>
 				<div id="metal1" class="colorfontform">
 					<p>carré1</p>
 				</div>
@@ -313,7 +310,7 @@
 				<div id="metal3" class="colorfontform">
 					<p>carré3</p>
 				</div>
-			<p>Les images apparaissant ci-dessus sont en réalité des "boites" ou "bloc" &lt;div&gt; succésives dont le code HTML et le suivant :</p>
+			<p>Les images apparaissant ci-dessus sont en réalité des "boites" ou "bloc" &lt;div&gt; successifs dont le code HTML et le suivant :</p>
 			<pre>
 				&lt;div id="metal1" class="colorfontform">
 					&lt;p&gt;carré1&lt;/p&gt;
@@ -327,7 +324,7 @@
 					&lt;p&gt;carré3&lt;/p&gt;
 				&lt;/div&gt;
 			</pre>
-			<p>Le seul réel contenu HTML de ces boites sont les bloc p permettant l'affichage du text. tout l'aspect décoratif est géré par le CSS qui est écrit dans un fichier à part *.css donc le code associé est le suivant :</p>
+			<p>Le seul réel contenu HTML de ces boites sont les blocs p permettant l'affichage du texte. tout l'aspect décoratif est géré par le CSS qui est écrit dans un fichier à part *.css donc le code associé est le suivant :</p>
 			<pre><code>
 		#metal1 {
 		z-index: 1;
@@ -366,10 +363,10 @@
 		font-size: 20;
 		}
 			</code></pre>
-			<p>Sur le code HTML, vous constater l'utilisation des attributs "id" et "class". L'attribut "id" permet d'identifier un élément de manière unique (l'id doit absolument être unique) et peut être utilisé pour diverses fonctionnalité (liens interne ou définir des règles CSS qui seront appliquées uniquement à cet élement. L'attribut "class" permet d'appliquer les mêmes règles CSS aux éléments partageant la même classe. Cependant, il est préférable d'utiliser les classe pour définir les règles CSS.</p>
+			<p>Sur le code HTML, vous constater l'utilisation des attributs "id" et "class". L'attribut "id" permet d'identifier un élément de manière unique (l'id doit absolument être unique) et peut être utilisé pour diverses fonctionnalité (liens interne ou définir des règles CSS qui seront appliquées uniquement à cet élément. L'attribut "class" permet d'appliquer les mêmes règles CSS aux éléments partageant la même classe. Cependant, il est préférable d'utiliser les classes pour définir les règles CSS.</p>
 
 			<h3>Les sélecteurs globaux, par class ou par identifiants:</h3>
-			<p>Dans le code CSS, les identifiants sont précédés d'un "#" et les classes d'un "." se sont des sélecteurs. il est aussi possible de donner definir des règles CSS à tous les éléments d'un même type. Les propriétés ou règles CSS de chaque élément sont écrites entre accolades {propriétés}. Voici un exemple</p>
+			<p>Dans le code CSS, les identifiants sont précédés d'un "#" et les classes d'un "." se sont des sélecteurs. Il est aussi possible de donner définir des règles CSS à tous les éléments d'un même type. Les propriétés ou règles CSS de chaque élément sont écrites entre accolades {propriétés}. Voici un exemple</p>
 			<pre><code>
 				a {
 				color: red;
@@ -388,21 +385,20 @@
 			</code></pre>
 			<p>
 			Ici tous les liens a auront une police de couleur rouge, tous les éléments partageant la classe "classe" auront une hauteur et une largeur de 300 pixels et l'élément défini par son identifiant sera placé en haut à gauche.</p>
-			<p> Il existe une multitude de propriété CSS incluant les couleurs , les formes, la position, la police, etc ... Il semble essentiel de préciser que tout élément peut en imbriquer d'autres et que tout élément est en réalité une boite. Les éléments imbriquées dans une bôite hérite automatiquement des propriétés de la boîte parent à moins que vous redéfinissiez/surgargiez les propriétés d'une boite enfant pour en modifier son comportement.</p>
+			<p> Il existe une multitude de propriété CSS incluant les couleurs , les formes, la position, la police, etc ... Il semble essentiel de préciser que tout élément peut en imbriquer d'autres et que tout élément est en réalité une boite. Les éléments imbriquées dans une boite héritent automatiquement des propriétés de la boîte parent à moins que vous redéfinissiez/surchargiez les propriétés d'une boite enfant pour en modifier son comportement.</p>
 
 			<h3>Les Flexbox:</h3>
-			<p>Il existe une propriété particulière des boîtes qui permet une manipulation plus aisé des boites. Cette propriété est la FlexBox. Elle permet par exemple de centrer verticalement un bloc de contenu à l'intérieur de son parent, 
-    		faire en sorte que tous les enfants d'un conteneur prennent une quantité égale de la largeur / hauteur disponible, quelle que soit la largeur / hauteur disponible ou encore faire passer toutes les colonnes dans une disposition de plusieurs colonnes adoptant la même hauteur et cela même si elles contiennent une quantité différente de contenu. il existe donc plusieurs propriété CSS permettant de déterminer le comprotement de ces flexbox.</p>
+			<p>Il existe une propriété particulière des boîtes qui permet une manipulation plus aisée des boites. Cette propriété est la FlexBox. Elle permet par exemple de centrer verticalement un bloc de contenu à l'intérieur de son parent, faire en sorte que tous les enfants d'un conteneur prennent une quantité égale de la largeur / hauteur disponible, quelle que soit la largeur / hauteur disponible ou encore faire passer toutes les colonnes dans une disposition de plusieurs colonnes adoptant la même hauteur et cela même si elles contiennent une quantité différente de contenu. Il existe donc plusieurs propriétés CSS permettant de déterminer le comportement de ces FlexBox.</p>
 
     		<h3> L'inspecteur, un outil essentiel à la mise en page.</h3>
-    		<p>L'inspecteur est un outils qui fait partie intégrante des navigateur web et s'affiche avec la touche F12. son affichage dépend du navigateur mais les fonctionnalités sont identiques. Pour le navigateur FireFox, vous obtennez cette affichage.</p>
+    		<p>L'inspecteur est un outil qui fait partie intégrante des navigateurs web et s'affiche avec la touche F12. Son affichage dépend du navigateur mais les fonctionnalités sont identiques. Pour le navigateur Firefox, vous obtenez cet affichage</p>
 
     		<img src="inspecteur.png" id="inspecteur" alt="image not found !">
 
-    		<p>Comme son nom l'idique, cet outil sert à inspecter chaque élement et permet de montrer également les règles CSS qui le régit. Il permet donc déterminer les problèmes d'apparence à régler pour parvenir au rendu désiré.</p>
+    		<p>Comme son nom l'indique, cet outil sert à inspecter chaque élément et permet de montrer également les règles CSS qui le régit. Il permet donc déterminer les problèmes d'apparence à régler pour parvenir au rendu désiré..</p>
 
     		<h3>Les pseudos-classes</h3>
-			<p>Les pseudos classes sont des mots clés particulier qui s'ajoute à la suite d'un sélecteur afin de modifier son état selon certaines actions de l'utilisateurs. Par exemple dans mon menu de navigation, les boîtes contenant mes liens changent de couleur au passage de la souris grâce à la pseudo-classe :hover. Mon code CSS ressemble donc à cela:</p>
+			<p>Les pseudos classes sont des mots clés particuliers qui s’ajoutent à la suite d'un sélecteur afin de modifier son état selon certaines actions de l’utilisateur. Par exemple dans mon menu de navigation, les boîtes contenant mes liens changent de couleur au passage de la souris grâce à la pseudo-classe :hover. Mon code CSS ressemble donc à cela::</p>
 			<pre>
 			<code>
 			.nav {
