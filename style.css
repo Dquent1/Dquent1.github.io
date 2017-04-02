@@ -126,16 +126,18 @@ body {
 		background-image:url(http://images.memes.com/meme/838184);
 		}
 
-		pre {
-			overflow: hidden;
-		}
+	
 
 		#metal3 {
-			z-index: 3
+		z-index: 3;
 		position: relative; 
 		top : -300px;
 		left: 30%;
 		background-image:url(https://s-media-cache-ak0.pinimg.com/564x/2e/78/15/2e78151b6b5997c64b77f5f902c75819.jpg);
+		}
+
+			pre {
+			overflow: hidden;
 		}
 
 		.colorfontform {
@@ -149,7 +151,13 @@ body {
 		font-size: 20;
 		}
 
+		li a{
+		color: black;
+		}
 
+		li a:visited{
+		color: black;
+		}
 
 		.formnav-container {
 		position:fixed;
@@ -194,32 +202,35 @@ body {
 		box-shadow: 60px -16px teal; 
 		}
 		.nav-container {
-			display: none;
+			overflow: hidden;
+		display: none;
 		border: 1px solid blue;
-		box-shadow: 
 		width: 80%;
-		min-width: 150px;
+		max-width: 150px;
 		height: 40%;
 		min-height:500px;
 		overflow:auto;
 		margin:0 auto;
 		margin-top: 2%;
 		margin-left: 2%;
+		color: white;
 		border: 0em solid blue;
 		border-radius: 10%;
 		align-items: center;
 		}
 
 		.nav-container div {
-		min-width:60px;overflow:hidden;height:20px;line-height:20px;
+		overflow: hidden;
+		min-width:150px;
+		height:20px;
+		line-height:20px;
 		white-space: pre;
 		text-decoration: underline;
-		color: blue;
+		color: black;
    		text-align: left;
    		margin-bottom: 2px;
    		padding: 1%;
    		background: darkgrey;
-   		opacity: 0.5;
    		border:1px solid grey;
    		border-radius: 10%/10%;
    		transition: background 0.5s, transform 0.5s;
@@ -228,20 +239,24 @@ body {
 
    		.nav-container div:hover {
    		overflow: visible;
-   		
+   		color: black;
    		background: #FFF;
    		border:2px solid red;
    		opacity: 0.7;
-   		content:"...";
-   		transform: rotateY(360deg); 
+   		max-width: 15%;
+   		/*transform: rotateY(360deg);*/ 
+   		}
+
+   		a {
+   		color: white;
    		}
 
    		a:visited {
-   		color: blue;
+   		color: white;
 		}
 
 		a:hover {
-		background-color: lightblue ;
+		color: black;
 		opacity: 0.9 ;
 		background: #FFF;
    		border-width: : 0 2px 0 2px;
@@ -249,15 +264,22 @@ body {
 		}
 
 		.Menu {
-
+		color: black;
 		position: fixed;
-		justify-content: space-around;
+		justify-content: center;
 		background: darkgrey;
-		top: 0px;
+		top: 55px;
+		padding-top: 20px;
+		line-height: 25px;
+		margin-left: -45px;
+		min-height: 20px;
 		border:2px solid blue;
 		border-radius: 10%;
 		width: 7%;
 		min-width:80px;
+		-webkit-transform : rotate(-90deg);
+		transition: background 0.5s, transform 0.5s;
+   		transition: width 0.5s, height 0.5s, background 0.5s, transform 0.5s;
 		}
 
 		#menuchoice { 
@@ -265,28 +287,32 @@ body {
 			background: darkgrey;
 			border:0.2em solid black;
 			border-radius: 10%;
-			width: 7%;
+			max-width: : 170px;
 			top: 25px;
 			left: 0;
-			min-width: 80px;
+			min-width: 180px;
+			line-height: 25px;
 		}
 
 		.nav-html {
-
+			overflow: hidden;
+			color: black;
 			border:0.1em solid black;
 			background: darkgrey;
 			border:0.2em solid black;
 			border-radius: 10%;
 			z-index: 1;
 			position: fixed;
-			width: 7%;
+			width: 15%;
 			top: 25px;
 			left: 0.1%;
-			min-width: 80px;
+			min-width: 200px;
+			max-width: 170px;
 
 		}
 		.nav-css {
-
+			overflow: hidden;
+			color: black;
 			border:0.1em solid ,black;
 			background: darkgrey;
 			border:0.2em solid black;
@@ -294,8 +320,8 @@ body {
 			position: fixed;
 			top: 25px;
 			left: 0.1%;
-			width: 7%;
-			min-width: 80px;
+			min-width: 180px;
+			max-width: 15%;
 		}
 
 		.footer-container footer {
@@ -303,3 +329,7 @@ body {
 		bottom: -2%; 
 		text-align: center;
 		}
+
+
+
+
