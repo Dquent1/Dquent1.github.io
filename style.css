@@ -140,6 +140,11 @@ body {
 			overflow: hidden;
 		}
 
+		#inspecteur {
+		width: 0%;
+		height: 100%;
+		}
+
 		.colorfontform {
 		border-radius: 30%/80%;
 		height: 300px;
