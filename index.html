@@ -4,31 +4,38 @@
 	<title>Initiation au language HTML et CSS</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js.js"></script>
 </head>
 <body>
+
 <div class="maincontainer">
 
-	<div class="header-container">
-	<img src="html5css3.png" class="logo">
-	<header class="flexdirrow">
+	<div class="rowbox">
+
+
+
+		<header class="flexdirrow header-container">
+			<img class="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
+			<h2>Initiation au language HTML et CSS</h2>
+			<img class="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
 			
-		<img class="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
-		<h2>Initiation au language HTML et CSS</h2>
-		<img class="catimg" src="https://s-media-cache-ak0.pinimg.com/564x/4e/0b/10/4e0b10c6c41b1291b05c6122e33a0931.jpg" alt="image not found !">
-			
-	</header>
+		</header>
 	</div>
 
 	<div class="middle">
 
-		<div class="formnav-container">			
+		<div class="formnav-container">
+
+			<div class="Menu" id="menu" value="0">Menu</div>		
+
+
 			<div class="form-container">
-				<form action="" method="post" class="flexdirrcol">
+				<form  method="get" class="flexdirrcol">
 					<label for="nom"> nom :</label>
-					<input type="text" name="nom" id="nom" required="true">
+					<input type="text" name="nom" id="nom" required="required">
 					
 					<label for="mail"> mail :</label>
-					<input type="text" name="mail" id="mail" required="true">
+					<input type="text" name="mail" id="mail" required="required">
 					
 					<label for="com"> commentaire sur le disgn et le code:</label>
 					<textarea name="com" id="com"></textarea>
@@ -63,8 +70,9 @@
 						</div>
 
 					</fieldset>
-					<label for="validation">validation:</label>
-					<select name="validation">
+
+					<span>validation:</label>
+					<select id="select" name="validation">
 
 						<option value="1">
 							indéterminée
@@ -78,28 +86,44 @@
 							recalé
 						</option>
 					</select>
-
-					<button type="submit">envoyez</button>
+					<div class="rowbox">
+					<button type="submit" id="submit">envoyez</button>
+					<button id="cancel">annuler</button>
+					</div>
 				</form>	
 			</div>
 
-			<div class="nav-container">
-				<nav class="nav">
-				<ul>
-					<div><li><a href="#def">Définition du HTML</a></li></div>
-					<div><li><a href="#structure">Structure d'une page web.</a></li></div>
-					<div><li><a href="#encodage">importation d'encodage.</a></li></div>
-					<div><li><a href="#sémantique">Les balises sémantiques </a></li></div>
-					<div><li><a href="#liste">Les balises de liste </a></li></div>
-					<div><li><a href="#definition">Les balises de définitions </a></li></div>
-					<div><li><a href="#code">Les balises de code et unification</a></li></div>
-					<div><li><a href="#tableau">Les tableaux</a></li></div>
-					<div><li><a href="#section/articles">Les sections et articles</a></li></div>
-					<div><li><a href="#lien">Les liens</a></li></div>
-					<div><li><a href="#nav">Les navigateur</a></li></div>
-					<div><li><a href="#CSS">Aspect de mise en forme et CSS</a></li></div>
-				</ul>
-			</nav>
+			
+
+			<div class="nav-container .crop">
+				<nav class="nav" id="menuchoice">
+					<div id="formulaire" data-toggle="tooltip" title="formulaire de notation">Formulaire de notation</div>
+					<div id="coursHTML" data-toggle="tooltip" title="Sections HTML">Sections HTML</div>
+					<div id="coursCSS" data-toggle="tooltip" title="Sections HCSS">Section CSS</div>
+				</nav>
+
+				<nav class="nav-html .crop">
+					<div ><a href="#def" data-toggle="tooltip" title="Définition du HTML">Définition du HTML</a></div>
+					<div ><a href="#structure" data-toggle="tooltip" title="Structure d'une page web">Structure d'une page web.</a></div>
+					<div ><a href="#encodage" data-toggle="tooltip" title="importation d'encodage.">importation d'encodage.</a></div>
+					<div ><a href="#sémantique" data-toggle="tooltip" title="Les balises sémantiques">Les balises sémantiques </a></div>
+					<div ><a href="#liste" data-toggle="tooltip" title="Les balises de liste">Les balises de liste </a></div>
+					<div ><a href="#definition" data-toggle="tooltip" title="Les balises de définitions ">Les balises de définitions </a></div>
+					<div ><a href="#code" data-toggle="tooltip" title="Les balises de code et unification">Les balises de code et unification</a></div>
+					<div ><a href="#tableau" data-toggle="tooltip" title="Les tableaux">Les tableaux</a></div>
+					<div ><a href="#section/articles" data-toggle="tooltip" title="Les sections et articles">Les sections et articles</a></div>
+					<div ><a href="#lien" data-toggle="tooltip" title="Les liens">Les liens</a></div>
+					<div ><a href="#nav" data-toggle="tooltip" title="Les menu de navigations">Les menu de navigations</a></div>
+				</nav>
+
+				<nav class="nav-css .crop">
+					<div><a href="#CSS" data-toggle="tooltip" title="Sections HTML">Aspect de mise en forme et CSS</a></div>
+					<div><a href="#selecteurs" data-toggle="tooltip" title="Les selecteurs">Les selecteurs</a></div>
+					<div><a href="#Flexbox" data-toggle="tooltip" title="Les Flexbox">Les Flexbox</a></div>
+					<div><a href="#Inspector" data-toggle="tooltip" title="L'inspecteur">L'inspecteur</a></div>
+					<div><a href="#P-class" data-toggle="tooltip" title="Aspect de mise en forme et CSS<">Aspect de mise en forme et CSS</a></div>
+				</nav>
+
 			</div>
 		</div>
 		
@@ -365,6 +389,8 @@
 			</code></pre>
 			<p>Sur le code HTML, vous constater l'utilisation des attributs "id" et "class". L'attribut "id" permet d'identifier un élément de manière unique (l'id doit absolument être unique) et peut être utilisé pour diverses fonctionnalité (liens interne ou définir des règles CSS qui seront appliquées uniquement à cet élément. L'attribut "class" permet d'appliquer les mêmes règles CSS aux éléments partageant la même classe. Cependant, il est préférable d'utiliser les classes pour définir les règles CSS.</p>
 
+
+			<section id="selecteurs">
 			<h3>Les sélecteurs globaux, par class ou par identifiants:</h3>
 			<p>Dans le code CSS, les identifiants sont précédés d'un "#" et les classes d'un "." se sont des sélecteurs. Il est aussi possible de donner définir des règles CSS à tous les éléments d'un même type. Les propriétés ou règles CSS de chaque élément sont écrites entre accolades {propriétés}. Voici un exemple</p>
 			<pre><code>
@@ -386,17 +412,23 @@
 			<p>
 			Ici tous les liens a auront une police de couleur rouge, tous les éléments partageant la classe "classe" auront une hauteur et une largeur de 300 pixels et l'élément défini par son identifiant sera placé en haut à gauche.</p>
 			<p> Il existe une multitude de propriété CSS incluant les couleurs , les formes, la position, la police, etc ... Il semble essentiel de préciser que tout élément peut en imbriquer d'autres et que tout élément est en réalité une boite. Les éléments imbriquées dans une boite héritent automatiquement des propriétés de la boîte parent à moins que vous redéfinissiez/surchargiez les propriétés d'une boite enfant pour en modifier son comportement.</p>
+			</section>
 
+			<section id="Flexbox">
 			<h3>Les Flexbox:</h3>
 			<p>Il existe une propriété particulière des boîtes qui permet une manipulation plus aisée des boites. Cette propriété est la FlexBox. Elle permet par exemple de centrer verticalement un bloc de contenu à l'intérieur de son parent, faire en sorte que tous les enfants d'un conteneur prennent une quantité égale de la largeur / hauteur disponible, quelle que soit la largeur / hauteur disponible ou encore faire passer toutes les colonnes dans une disposition de plusieurs colonnes adoptant la même hauteur et cela même si elles contiennent une quantité différente de contenu. Il existe donc plusieurs propriétés CSS permettant de déterminer le comportement de ces FlexBox.</p>
+			</section>
 
+			<section id="Inspector">
     		<h3> L'inspecteur, un outil essentiel à la mise en page.</h3>
     		<p>L'inspecteur est un outil qui fait partie intégrante des navigateurs web et s'affiche avec la touche F12. Son affichage dépend du navigateur mais les fonctionnalités sont identiques. Pour le navigateur Firefox, vous obtenez cet affichage</p>
 
     		<img src="inspecteur.png" id="inspecteur" alt="image not found !">
 
     		<p>Comme son nom l'indique, cet outil sert à inspecter chaque élément et permet de montrer également les règles CSS qui le régit. Il permet donc déterminer les problèmes d'apparence à régler pour parvenir au rendu désiré..</p>
+    		</section>
 
+    		<section id="P-class">
     		<h3>Les pseudos-classes</h3>
 			<p>Les pseudos classes sont des mots clés particuliers qui s’ajoutent à la suite d'un sélecteur afin de modifier son état selon certaines actions de l’utilisateur. Par exemple dans mon menu de navigation, les boîtes contenant mes liens changent de couleur au passage de la souris grâce à la pseudo-classe :hover. Mon code CSS ressemble donc à cela::</p>
 			<pre>
@@ -425,18 +457,68 @@
 			</code>	
 			</pre>
 			</section>
+
 		</div>
 
-	</div>
 	
+
+	</div>	
 	<div class="footer-container">
 		<footer id="footer">
-			
+
 			<h3>page réalisée par Quentin</h3>
 
 		</footer>
 </div>
+<script type="text/javascript">
+	document.querySelector("#menu").addEventListener("click", function(){
+	if (document.querySelector("#menu").value==0){
+	document.querySelector(".nav-container").style.display = "flex";
+    document.querySelector(".nav-html").style.display = "none";
+    document.querySelector(".nav-css").style.display = "none";
+    document.querySelector("#menu").value=1;
 
+	} else {
+	document.querySelector(".nav-container").style.display = "none";
+    document.querySelector(".nav-html").style.display = "none";
+    document.querySelector(".nav-css").style.display = "none";
+    document.querySelector("#menu").value=0;
+	}
+});
+
+
+document.querySelector("#formulaire").addEventListener("click", function(){
+    document.querySelector(".form-container").style.display = "flex";
+    document.querySelector(".nav-html").style.display = "none";
+    document.querySelector(".nav-css").style.display = "none";
+
+});
+
+
+document.querySelector("#cancel").addEventListener("click", function(){
+    document.querySelector(".form-container").style.display = "none";
+});
+
+
+document.querySelector("#coursHTML").addEventListener("click", function(){
+    document.querySelector(".nav-html").style.display = "block";
+        document.querySelector(".nav-css").style.display = "none";
+});
+
+document.querySelector("#coursCSS").addEventListener("click", function(){
+    document.querySelector(".nav-css").style.display = "block";
+        document.querySelector(".nav-html").style.display = "none";
+});
+
+
+document.querySelector(".text-containers>p").addEventListener("click", function(){
+    document.querySelector(".nav-html").style.display = "none";
+    document.querySelector(".nav-css").style.display = "none";
+    document.querySelector(".nav-container").style.display = "none";
+});
+
+
+</script>
 </body>
 
 </html>
