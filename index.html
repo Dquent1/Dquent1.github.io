@@ -26,7 +26,7 @@
 
 		<div class="formnav-container">
 
-			<div class="Menu" id="menu" value="0">Menu</div>		
+			<div class="Menu" id="menu" value="0" data-toggle="tooltip" title="Menu">Menu</div>		
 
 
 			<div class="form-container">
@@ -71,7 +71,7 @@
 
 					</fieldset>
 
-					<span>validation:</label>
+					<span>validation:</span>
 					<select id="select" name="validation">
 
 						<option value="1">
@@ -114,6 +114,8 @@
 					<div ><a href="#section/articles" data-toggle="tooltip" title="Les sections et articles">Les sections et articles</a></div>
 					<div ><a href="#lien" data-toggle="tooltip" title="Les liens">Les liens</a></div>
 					<div ><a href="#nav" data-toggle="tooltip" title="Les menu de navigations">Les menu de navigations</a></div>
+					<div ><a href="#idFormulaires" data-toggle="tooltip" title="formulaires">Les formulaires</a></div>
+					<div ><a href="#liens-utiles" data-toggle="tooltip" title="Liens utiles">Liens utiles</a></div>
 				</nav>
 
 				<nav class="nav-css .crop">
@@ -121,7 +123,9 @@
 					<div><a href="#selecteurs" data-toggle="tooltip" title="Les selecteurs">Les selecteurs</a></div>
 					<div><a href="#Flexbox" data-toggle="tooltip" title="Les Flexbox">Les Flexbox</a></div>
 					<div><a href="#Inspector" data-toggle="tooltip" title="L'inspecteur">L'inspecteur</a></div>
-					<div><a href="#P-class" data-toggle="tooltip" title="Aspect de mise en forme et CSS<">Aspect de mise en forme et CSS</a></div>
+					<div><a href="#P-class" data-toggle="tooltip" title="Aspect de mise en forme et CSS">Les pseudo-classes</a></div>
+					<div><a href="#P-Element" data-toggle="tooltip" title="Les Pseudos éléments">Les pseudos-éléments</a></div>
+					<div ><a href="#liens-utiles" data-toggle="tooltip" title="Liens utiles">Liens utiles</a></div>
 				</nav>
 
 			</div>
@@ -321,6 +325,88 @@
 			</pre>
 			</section>
 
+			<section id="idFormulaires">
+    			<h3>Les formulaires</h3>
+				<p>Ce sont des élements devenus plus que communs et permettent de récuperer des données utilisateur. Un formulaires est toujours déclaré par les balises &lt;form&gt;&lt;form&gt; et doivent contenir au moins une balise &lt;input&gt; et une balise &lt;button&gt;. je vous invite a ouvrir le menu de mon site et d'ouvrir le fromulaire de notation qui servira d'exemple concré.</p>
+
+				<pre>
+					<code>
+		&lt;form  method="get" action="URL" class="flexdirrcol"&gt;
+					&lt;label for="nom"&gt; nom :&lt;/label&gt;
+					&lt;input type="text" name="nom" id="nom" required="required"&gt;
+					
+					&lt;label for="mail"> mail :&lt;/label&gt;
+					&lt;input type="text" name="mail" id="mail" required="required"&gt;
+					
+					&lt;label for="com"> commentaire sur le disgn et le code:&lt;/label&gt;
+					&lt;textarea name="com" id="com"&gt;&lt;/textarea&gt;
+
+					&lt;div class="rowbox">
+						&lt;input type="checkbox" name="choix" value="1" id="choix1">
+						&lt;label for="choix1">objectif&lt;/label&gt;
+					&lt;/div&gt;
+
+					&lt;div class="rowbox">
+						&lt;input type="checkbox" name="choix" value="2" id="choix2">
+						&lt;label for="choix2">pertinant&lt;/label&gt;
+					&lt;/div&gt;
+
+					&lt;fieldset&gt;
+						&lt;legend&gt;avis global&lt;/legend&gt;
+
+						&lt;div class="rowbox">
+							&lt;input type="radio" name="puce" value="1"&gt;
+							&lt;label for="puce1"> bien fait&lt;/label&gt;
+						&lt;/div&gt;
+
+						&lt;div class="rowbox">
+							&lt;input type="radio" name="puce" value="2"&gt;	
+							&lt;label for="puce2">correct&lt;/label&gt;
+						&lt;/div&gt;
+						&lt;div class="rowbox">
+							&lt;input type="radio" name="puce" value="3"&gt;	
+							&lt;label for="puce2">mauvais&lt;/label&gt;
+						&lt;/div&gt;
+
+					&lt;/fieldset&gt;
+
+					&lt;span&gt;validation:&lt;/label&gt;
+					&lt;select id="select" name="validation"&gt;
+
+						&lt;option value="1"&gt;
+							indéterminée
+						&lt;/option&gt;
+
+						&lt;option value="2"&gt;
+							validé
+						&lt;/option&gt;
+
+						&lt;option value="3"&gt;
+							recalé
+						&lt;/option&gt;
+					&lt;/select&gt;
+					&lt;div class="rowbox"&gt;
+					&lt;button type="submit" id="submit">envoyez&lt;/button&gt;
+					&lt;button id="cancel"&gt;annuler&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/form&gt;	
+			&lt;/div&gt;
+					</code>	
+				</pre>
+
+				<p>Les balise form doivent avoir un attribut methode="get"/"post" une action="URL" afin de définir ma méthode de renvoie des données du formulaires. Dans ce formulaire il existe 5 type de champs différents:</p>
+				<ul>
+					<li> les input de type text comme les champs nom et mail du formulaire de cette page</li>
+					<li> les input de type checkbox qui sont les boites à cocher (choix multiples)</li>
+					<li> les input de type radio qui sont les cercles à sélectionner (choix unique) et doivent être inclus entre balises &lt;fieldset&gt;...&lt;/fieldset&gt;</li>
+					<li> les champs &lt;/textarea&gt; qui permettent de récupéré un champs text</li>
+					<li> les champs &lt;select&gt;...&lt;select&gt; qui permettent de sélectionner un choix parmis plusieurs options dans un menu déroulant.</li>
+				</ul>
+
+				<p>Afin de pouvoir récupérer les donner de chaque champs, il faut que chacun des ces élément ait des attributs name="" et un id="". Les check box est radios doivent avoir un attribut value="". Les radios peuvent être contenu dans un champs légende permettant de nommer le groupe de choix. Les élément Select contiennent des champs &lt;option value="X"&gt;...&lt;/option&gt; qui peuvent eux même être regroupé dans des balises &lt;optgroup&gt;...&lt;/optgroup&gt; . Pour finir chaque élément input peut être associé à un label en faisant appel à son attribut name="" de la manière suivante &lt;label for="name"&gt;....&lt;label&gt;<p>
+				</p>
+			</section>
+
 			<section id="CSS">
   			<h3>Aspect de mise en forme et CSS</h3>
 		
@@ -428,11 +514,11 @@
     		<p>Comme son nom l'indique, cet outil sert à inspecter chaque élément et permet de montrer également les règles CSS qui le régit. Il permet donc déterminer les problèmes d'apparence à régler pour parvenir au rendu désiré..</p>
     		</section>
 
-    		<section id="P-class">
-    		<h3>Les pseudos-classes</h3>
-			<p>Les pseudos classes sont des mots clés particuliers qui s’ajoutent à la suite d'un sélecteur afin de modifier son état selon certaines actions de l’utilisateur. Par exemple dans mon menu de navigation, les boîtes contenant mes liens changent de couleur au passage de la souris grâce à la pseudo-classe :hover. Mon code CSS ressemble donc à cela::</p>
-			<pre>
-			<code>
+			<section id="P-class">
+    			<h3>Les pseudos-classes</h3>
+				<p>Les pseudos classes sont des mots clés particuliers qui s’ajoutent à la suite d'un sélecteur afin de modifier son état selon certaines actions de l’utilisateur. Par exemple dans mon menu de navigation, les boîtes contenant mes liens changent de couleur au passage de la souris grâce à la pseudo-classe :hover. Mon code CSS ressemble donc à cela::</p>
+				<pre>
+					<code>
 			.nav {
 			display: inline-flex;
 			list-style: none;
@@ -453,16 +539,50 @@
    			.nav div:hover {
    			background: #FFF;
    			border:2px solid red;
-   			}
-			</code>	
-			</pre>
+   			}	
+					</code>	
+				</pre>
 			</section>
 
-		</div>
+			<section id="P-Element">
+    			<h3>Les pseudos-éléments</h3>
+				<p>Les pseudos classes sont des mots clés particuliers qui s’ajoutent à la suite d'un sélecteur afin de modifier son état. Par exemple dans le titre de mes section est précédé et suivi d'un caractère spécial grâce au pseudo élément ::after et ::before. L'utilisation de cette fonction ressemble à :</p>
+				<pre>
+					<code>
+		.text-container h3 {
+		color: red;
+		text-decoration: underline;
+		}
 
-	
+		.text-container h3::after {
+		content: " ✧"
+		}
 
-	</div>	
+		.text-container h3::before {
+		content: "✧ "
+		}
+
+
+					</code>	
+				</pre>
+			</section>
+
+			<section id="liens-utiles">
+			<h3>Liens utiles :</h3>
+			<p>Voici donc quelques liens utiles pour trouver les ressources nécessaire à tout développeurs HTML CSS javascript:</p>
+			<ul>
+				<li><a href="https://developer.mozilla.org/fr/" >https://developer.mozilla.org/fr/</a></li>
+				<li><a href="https://www.smashingmagazine.com/" >https://www.smashingmagazine.com/</a></li>
+				<li><a href="http://stackoverflow.com/" >http://stackoverflow.com/</a></li>
+				<li><a href="https://www.developpez.com/" >https://www.developpez.com/</a></li>
+				<li><a href="https://validator.w3.org/" >https://www.smashingmagazine.com/</a></li>
+			</ul>
+			<p>Voici donc quelques liens utiles pour valider vos pages HTML selon les normes W3C:</p>
+			<ul>
+				<li><a href="https://validator.nu/" >https://validator.nu/</a></li>
+				<li><a href="https://validator.w3.org/" >https://validator.w3.org/</a></li>
+			</ul>
+
 	<div class="footer-container">
 		<footer id="footer">
 
@@ -477,12 +597,21 @@
     document.querySelector(".nav-html").style.display = "none";
     document.querySelector(".nav-css").style.display = "none";
     document.querySelector("#menu").value=1;
-
+    document.querySelector("#menu").style.top = 0+"px";
+    document.querySelector("#menu").style.left=0+"px";
+    document.querySelector("#menu").style.webkitTransform = "rotate(0deg)";
+    document.querySelector("#menu").style.marginLeft = "0px";
+        document.querySelector("#menu").style.paddingTop = "0px";
 	} else {
 	document.querySelector(".nav-container").style.display = "none";
     document.querySelector(".nav-html").style.display = "none";
     document.querySelector(".nav-css").style.display = "none";
     document.querySelector("#menu").value=0;
+    document.querySelector("#menu").style.top = 55+"px";
+    document.querySelector("#menu").style.webkitTransform = "rotate(-90deg)";
+    document.querySelector("#menu").style.marginLeft = "-45px";
+    document.querySelector("#menu").style.paddingTop = "20px";
+
 	}
 });
 
