@@ -246,7 +246,7 @@ body {
    		overflow: visible;
    		color: black;
    		background: #FFF;
-   		border:2px solid red;
+   		border:2px solid;
    		opacity: 0.7;
    		max-width: 15%;
    		/*transform: rotateY(360deg);*/ 
