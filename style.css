@@ -248,7 +248,7 @@ body {
    		background: #FFF;
    		border:2px solid;
    		opacity: 0.7;
-   		max-width: 15%;
+   		max-width: 100%;
    		/*transform: rotateY(360deg);*/ 
    		}
 
