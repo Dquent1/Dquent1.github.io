@@ -153,7 +153,6 @@ body {
 		background-size: 100%;
 		text-align: center;
 		color: red;
-		font-size: 20;
 		}
 
 		li a{
@@ -182,12 +181,12 @@ body {
 		background: #FFF;
 		text-align: left;
 		position: fixed;
-		top:30%;
+		top:25%;
 		left: 40%;
 		padding: 5%;
 		border: 0.5em solid blue;
 		border-radius: 3%;
-		height: : 500px;
+		height: 400px;
 		width: 200px;
 		}
 
@@ -203,15 +202,11 @@ body {
 		line-height: 40px
 		}
 
-		.nav-html, .nav-css, .Menu; {
-		box-shadow: 60px -16px teal; 
-		}
 		.nav-container {
 			overflow: hidden;
 		display: none;
 		border: 1px solid blue;
 		width: 80%;
-		max-width: 150px;
 		height: 40%;
 		min-height:500px;
 		overflow:auto;
@@ -291,7 +286,7 @@ body {
 			background: darkgrey;
 			border:0.2em solid black;
 			border-radius: 10%;
-			max-width: : 170px;
+			max-width: 170px;
 			top: 25px;
 			left: 0;
 			min-width: 180px;
@@ -317,7 +312,7 @@ body {
 		.nav-css {
 			overflow: hidden;
 			color: black;
-			border:0.1em solid ,black;
+			border:0.1em solid black;
 			background: darkgrey;
 			border:0.2em solid black;
 			border-radius: 10%;
@@ -332,8 +327,4 @@ body {
 		position: relative;
 		bottom: -2%; 
 		text-align: center;
-		}
-
-
-
-
+}
